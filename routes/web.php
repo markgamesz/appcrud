@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\companycrudcontroller;
 
+Route::resource('companies', companycrudcontroller::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
