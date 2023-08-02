@@ -15,16 +15,16 @@
                 <h2>CRUD Exampls</h2>
 
             </div>
-            <div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <a href="{{route('companies.create')}}" class="btn btn-success">Create</a>
 
             </div>
             @if ($message = Session::get('success'))
-            <div class="alert alert-success">
+            <div class="alert alert-success mt-2">
                 <p>{{$message}}</p>
             </div>
             @endif
-            <table class="table table-bordered">
+            <table class="table table-bordered mt-2">
                 <tr>
                     <th>No.</th>
                     <th>Name</th>
